@@ -1,1 +1,1 @@
-# Nous retouvons le code de l'application utlisé pour creer un pipeline avec GiltLab 
+# Nous retouvons le code de l'application utilisé pour créer un pipeline avec GiltLab 
