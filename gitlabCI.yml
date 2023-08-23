@@ -1,0 +1,22 @@
+stages:
+  - build
+  - test
+  - deploy 
+
+job-build:
+  stage: build
+  script:
+    - echo "mon premier job"
+    - mkdir build
+    - touch ./build/file1.txt
+    - echo " j'ecris dans file1"
+artefacts: # recuperation des artefacts : livrables ou fichier pares le premier job executer
+  paths:
+    - ./build/file1.txt
+job test:
+  stage: test
+  script:
+    - cat ./build/file.txt | grep job 
+
+..... 
+  
